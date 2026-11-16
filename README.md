@@ -1,10 +1,10 @@
 # District poverty in Mozambique: small area estimates from the DHS and open geospatial data
 
-**[Interactive map](https://USERNAME.github.io/mozambique_sae/)** · Peter Hargreaves · [results table](output/s03_district_estimates.csv)
+**[Interactive map](https://mirrormerelabs.github.io/mozambique_sae/)** · Peter Hargreaves · [results table](output/s03_district_estimates.csv)
 
 ![Estimated share of the population in the national poorest 40%, and its uncertainty, by district](output/figures/fig1_estimate_uncertainty.png)
 
-Large, sparsely populated districts dominate the map visually; the [interactive map](https://USERNAME.github.io/mozambique_sae/), which gives each district's population, and the population figures under Key results give a fairer sense of where people live.
+Large, sparsely populated districts dominate the map visually; the [interactive map](https://mirrormerelabs.github.io/mozambique_sae/), which gives each district's population, and the population figures under Key results give a fairer sense of where people live.
 
 The Mozambique Demographic and Health Survey (DHS) 2022-23 is designed to give reliable estimates for the country's 11 provinces, yet many policy decisions, from budget allocation to the targeting of social protection, are made at district level. With a median of three survey clusters in each sampled district, and none at all in 16 of 157 districts, the survey alone cannot support district estimates. This project combines the DHS with open geospatial data in small area estimation (SAE) models to estimate, for every district, the share of the population living in households in the national poorest 40%, together with a measure of how certain each estimate is.
 

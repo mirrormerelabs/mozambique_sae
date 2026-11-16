@@ -1,0 +1,16 @@
+item,value
+Households read,14250
+Households with no de jure members (dropped),1
+Households analysed,14249
+Clusters with coordinates,617
+Clusters outside every district polygon (nearest district used),1
+Clusters whose DHS province matches the district's GADM province,593
+Clusters whose DHS province matches the district's assigned province,617
+Districts whose assigned (DHS) province differs from GADM,1
+"National estimate, share in poorest 40% (person-weighted)",0.4
+National SE,0.0134
+Districts,157
+Districts with any cluster,141
+Districts with 2+ clusters,118
+Districts in model likelihood,107
+Median clusters per sampled district,3

@@ -1,0 +1,15 @@
+# DHS microdata and anything derived at household, cluster or small-district level
+data_work/
+# Simulation test outputs
+sim/
+# R and renv
+.Rproj.user/
+.Rhistory
+.RData
+renv/library/
+renv/staging/
+.DS_Store
+# Run logs (diagnostics, not results), local scratch and rendered previews
+output/logs/
+_to_delete/
+README.html

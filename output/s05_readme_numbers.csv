@@ -1,0 +1,23 @@
+item,value
+Districts,157
+Districts with 2+ clusters and a usable direct estimate,107
+Districts predicted out of sample,50
+Sampling variances (MOZSAE_VAR),smoothed
+"Median CV, direct (districts in model)",0.264
+"Median CV, M3 (same districts)",0.198
+Share of these districts with CV below 20%: direct,0.364
+Share with CV below 20%: M3,0.505
+Districts with P(share > 50%) >= 0.9,40
+Provinces where the model mean lies in the direct 95% CI,9 of 11
+"Population of districts with P(share > 50%) >= 0.9 (million, Meta 2020)",8.4
+Share of the national population in these districts,0.27
+"People in the national poorest 40% in these districts (million, posterior mean)",5.9
+"People in the national poorest 40% in these districts (million, 95% interval)",5.5 to 6.2
+"Median 95% interval width (pp), Usable direct estimate, 2-4 clusters, Direct (survey only) (66 districts)",30.5
+"Median 95% interval width (pp), Usable direct estimate, 2-4 clusters, Spatial Fay-Herriot (M3) (66 districts)",36.8
+"Median 95% interval width (pp), Usable direct estimate, 5+ clusters, Direct (survey only) (41 districts)",24.1
+"Median 95% interval width (pp), Usable direct estimate, 5+ clusters, Spatial Fay-Herriot (M3) (41 districts)",26.5
+"Median 95% interval width (pp), No usable direct estimate, 0 clusters, Spatial Fay-Herriot (M3) (16 districts)",62.7
+"Median 95% interval width (pp), No usable direct estimate, 1 clusters, Spatial Fay-Herriot (M3) (23 districts)",47.4
+"Median 95% interval width (pp), No usable direct estimate, 2-4 clusters, Spatial Fay-Herriot (M3) (3 districts)",8.8
+"Median 95% interval width (pp), No usable direct estimate, 5+ clusters, Spatial Fay-Herriot (M3) (8 districts)",0.9

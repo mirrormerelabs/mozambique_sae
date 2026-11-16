@@ -1,0 +1,8 @@
+item,value
+"Meta CSV population, whole bounding rectangle incl. neighbouring countries",73710757.453
+Population on Mozambique district cells,31147374.959
+Population on cells with travel time > 48 h (set to missing),74284.116
+Districts with no RWI tile (nearest tile used),0
+"Pearson r, rwi vs log_tt",-0.806
+"Pearson r, rwi vs log_dens",0.69
+"Pearson r, log_tt vs log_dens",-0.828

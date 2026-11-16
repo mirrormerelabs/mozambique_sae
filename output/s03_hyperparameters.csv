@@ -1,0 +1,7 @@
+model,parameter,mean,sd,q025,q975
+M1,Precision for idx,0.3735,0.0585,0.2705,0.4991
+M2,Precision for idx,0.5813,0.0968,0.4127,0.7913
+M3,Precision for idx,1.2461,0.3277,0.7243,2.0051
+M3,Phi for idx,0.8629,0.1005,0.6061,0.9841
+M4,Precision for idx,0.7631,0.1897,0.454,1.1958
+M4,Phi for idx,0.8133,0.1095,0.54990000000000006,0.9647

@@ -1,0 +1,5 @@
+model,districts,median_cv_direct,median_cv_model,median_ratio,share_cv_below_20pct_direct,share_cv_below_20pct_model
+M1,107,0.2643,0.2825,1.0094,0.3645,0.2617
+M2,107,0.2643,0.2711,1.0218,0.3645,0.3178
+M3,107,0.2643,0.1983,0.7821,0.3645,0.5047
+M4,107,0.2643,0.2263,0.8657,0.3645,0.4299

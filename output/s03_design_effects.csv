@@ -1,0 +1,16 @@
+item,value
+Sampling variances used (MOZSAE_VAR),smoothed
+Districts with a direct variance,107
+Pooled design effect (mean weighted by clusters - 1),6.538
+Unweighted mean of district design effects,5.092
+District design effect: minimum,0.008
+10th percentile,0.133
+25th percentile,0.672
+Median,2.75
+75th percentile,6.912
+90th percentile,12.642
+Maximum,37.535
+"Median ratio, smoothed to direct variance (logit scale)",1.247
+R2 of the preliminary regression for the stabilised share,0.4
+Districts with 2+ clusters and a direct share of 0 or 1 (MOZSAE_ZERO),11 (exclude)
+These districts in the likelihood,0

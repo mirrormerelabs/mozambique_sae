@@ -2,6 +2,14 @@
 
 **[Interactive map](https://mirrormerelabs.github.io/mozambique_sae/)** · Peter Hargreaves · [results table](output/s03_district_estimates.csv)
 
+## In brief
+
+Governments and aid programmes often need to know which districts are poorest, so that they can direct budgets and support where they are most needed. Mozambique's main household survey, the Demographic and Health Survey, interviews around 14,000 households, which is enough to describe each of the country's 11 provinces but too few to describe its 157 districts: most districts contain only a handful of surveyed villages, and some contain none.
+
+This project fills that gap by combining the survey with information available for every district, such as satellite-based estimates of wealth, travel time to the nearest city, and population density, and by drawing on the fact that neighbouring districts tend to be alike. The result is an estimate, for every district, of the share of people who are among the poorest 40% of the country (measured by household assets and living conditions), together with an honest statement of how certain each estimate is.
+
+The estimates show a sharp divide between the north and centre, where in many districts most people are among the poorest 40%, and the south, where few are. About 8.4 million people live in the 40 districts that are most clearly poor. The estimates are least certain in Cabo Delgado, where many districts were not surveyed. They are best used to decide how resources should be shared between districts, not to identify individual poor households.
+
 ![Estimated share of the population in the national poorest 40%, and its uncertainty, by district](output/figures/fig1_estimate_uncertainty.png)
 
 Large, sparsely populated districts dominate the map visually; the [interactive map](https://mirrormerelabs.github.io/mozambique_sae/), which gives each district's population, and the population figures under Key results give a fairer sense of where people live.
@@ -91,8 +99,19 @@ Districts are the 159 geoBoundaries ADM2 units, less two islands in Lake Niassa 
 - An area-level model only. A unit-level model (for example, empirical best prediction with household covariates) would need census microdata, which are not publicly available.
 - The DHS wealth index is a relative asset measure, not consumption poverty.
 - Covariates are means over whole districts, whereas DHS clusters are a sample within them.
+- The covariate set is deliberately minimal: three district-level covariates, chosen for a proof of concept. They are strongly correlated with one another, so their individual coefficients are not interpreted, and they explain only part of the variation between districts; most of the remainder is captured by the spatial effect. This matters least where districts have survey data and most for the 16 districts without clusters, whose estimates rest on covariates and neighbouring districts alone.
 - No census benchmark is available, so validation relies on internal checks (CPO, PIT), simulation, and agreement with the province direct estimates.
 - Sixteen districts have no survey clusters, nine of them in Cabo Delgado. Their estimates rest on covariates and neighbouring districts; if they were left unsampled for reasons related to their circumstances (for example insecurity), they may differ from their neighbours in ways the model cannot capture.
+
+## Next steps
+
+This analysis is a first stage rather than an end point. The extensions I see as most valuable are:
+
+1. **A richer set of covariates, with formal selection.** Candidate covariates such as night-time lights (VIIRS), building density and change (Open Buildings), cropland and vegetation indices, urban extent (GHSL), and conflict events (ACLED), selected by cross-validated lasso or by shrinkage priors within the Bayesian model, and compared on the same CPO and simulation checks used here. Better covariates would most improve the estimates for districts without survey clusters.
+2. **Conflict-affected districts.** Most of the unsurveyed districts are in Cabo Delgado. Testing whether conflict exposure changes their estimates, rather than assuming they resemble their neighbours, would make the model's weakest estimates more defensible.
+3. **Change over time.** Earlier DHS rounds with cluster locations would allow a spatio-temporal model of how district poverty has changed, which is closer to what monitoring and evaluation require than a single cross-section.
+4. **Other measures of poverty.** The DHS wealth index measures assets and living conditions. Repeating the analysis with consumption-based poverty from a household budget survey, where the data allow, would test whether the district pattern holds under the measure most programmes use.
+5. **From areas to households.** District estimates are suited to allocating resources between areas, not to selecting households within them (Hargreaves, in preparation). Combining area estimates with targeting within districts is the step that links this work to programme design.
 
 ## References
 
